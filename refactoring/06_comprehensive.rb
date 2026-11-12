@@ -72,4 +72,6 @@ def print_loan_report(loans)
   puts "Total fees: #{calculate_total_fee(loans)}"
 end
 
-print_loan_report(loans)
+if __FILE__ == $PROGRAM_NAME
+  print_loan_report(loans)
+end
